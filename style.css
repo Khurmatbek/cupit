@@ -1,0 +1,227 @@
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/panton/Panton-BlackCaps.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("./fonts/panton/Panton-BlackCaps.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/panton/Panton-LightCaps.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("./fonts/panton/Panton-LightCaps.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: 800;
+    src: url("./fonts/panton/Panton-BlackitalicCaps.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url("./fonts/panton/Panton-BlackitalicCaps.woff") format("woff");
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Panton";
+    font-style: normal;
+    /* font-weight: 400; */
+}
+
+img {
+    display: block;
+}
+
+.site-header {
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 202px;
+    z-index: 1;
+}
+
+.contanier {
+    width: 1190px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+.header-nav {
+    position: relative;
+    display: flex;
+
+    align-items: center;
+
+}
+
+.header-service-link {
+    margin-right: 94px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #3C4852;
+
+}
+
+.header-help-link {
+    /* position: relative; */
+    margin-right: 86px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #3C4852;
+}
+
+.header-help-link::before {
+    position: absolute;
+    background-image: url("./icons/ms.svg");
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    top: calc(50% - 13px);
+    left: calc(50% - 120px);
+
+}
+
+.header-access-link {
+    position: relative;
+    padding: 17px 61px 17px 32px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #3C4852;
+    background: #FFCC80;
+    border-radius: 10px;
+}
+
+.header-access-link::after {
+    position: absolute;
+    background-image: url("./icons/voyti.svg");
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    top: calc(50% - 13px);
+    left: calc(50% + 35px);
+
+}
+
+.section-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.section-text-box {}
+
+.section-text {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 115px;
+    color: #3C4852;
+}
+
+.section-desc {
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0;
+    font-size: 25px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #3C4852;
+
+}
+
+.section-bottom-link-box {
+    display: flex;
+    align-items: center;
+}
+
+.section-link {
+    padding: 33px 41px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3C4852;
+    text-decoration: none;
+    border: 1px solid #FFCC80;
+    background: #FFCC80;
+    border-radius: 10px;
+    margin-right: 23px;
+
+}
+
+.section-link:hover {
+    background-color: #fff;
+}
+
+.section-link:last-child {
+    margin: 0;
+    background: #FFCC80;
+    border: 1px solid #FFCC80;
+}
+
+.section-link:last-child:hover {
+    background: white;
+}
+
+.section-img-box {
+    position: absolute;
+    background-image: url("./images/Group\ 155.svg");
+    width: 818px;
+    height: 757px;
+    background-repeat: no-repeat;
+    left: calc(50% - 108px);
+    top: calc(50% - 250px);
+}
